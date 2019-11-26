@@ -82,7 +82,7 @@ Remplir le form ci-dessus pour s'inscrire  a l'école :
 
 <div class="panel-body">
 
-<form action="student/store"  method="post">
+<form action="/student/store"  method="post">
 {{csrf_field()}}
 
 <div class="form-groupe">
@@ -99,6 +99,8 @@ Remplir le form ci-dessus pour s'inscrire  a l'école :
 <div class="form-groupe">
 <label for="Datedenaissance">La date de naissance </label>
 <input type="text" name=Datedenaissance class="form">
+<label for="Lieudenaissance">Lieu de naissance </label>
+<input type="text" name=Lieudenaissance class="form">
 </div> <br>
 <div class="form-groupe">
 <label for="numdetelephon">Numéro de Télephone :  </label>

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Etudiantes;
+use App\Etudiante;
 class Etudiantcontroller extends Controller
 {
     /**
@@ -33,14 +33,17 @@ class Etudiantcontroller extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    { $Student= new Etudiantes;
-        $Student->
-        $Student->
-        $Student->
-        $Student->
-        $Student->
-        $Student->
-        $Student->
+    { $Student= new Etudiante;
+        $Student->nom=$request->nom;
+        $Student->prenom=$request->pernom;    
+        $Student->adress=$request->adress;
+        $Student->LieuNaissance=$request->Lieudenaissance;
+        $Student->datedenaissance=$request->Datedenaissance;
+        $Student->NumTelephone=$request->numdetelephon;
+        $Student->PieceIdentite=$request->pieceiden;
+        
+        $Student->save();
+        return redirect()->back(); 	
     
     }
 

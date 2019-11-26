@@ -23,8 +23,10 @@ class CreateEtudiantesTable extends Migration
             $table->string('datedenaissance');
             $table->string('NumTelephone');
             $table->string('PieceIdentite');
+            //////
             
-            $table->integer('Compte_idCompte');
+            
+            $table->integer('Compte_idCompte')->default(0);
         });
     }
 
