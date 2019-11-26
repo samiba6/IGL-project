@@ -12,8 +12,9 @@ class Etudiantcontroller extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        //
+    { $students=Etudiante::all();
+        return view('inscription.listeetud')->with('students',$students);
+
     }
 
     /**

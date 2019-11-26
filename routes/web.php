@@ -24,3 +24,7 @@ Route::post('/student/store', [
     'as'=>'student.store'
 ]
 );
+Route::get('/student/list', [
+    'uses'=>'Etudiantcontroller@index'
+]
+);
