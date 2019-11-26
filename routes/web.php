@@ -14,3 +14,13 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('student/register', [
+    'uses'=>'Etudiantcontroller@create',
+    'as'=>'student.registre'
+]
+);
+Route::post('student/store', [
+    'uses'=>'Etudiantcontroller@store',
+    'as'=>'student.store'
+]
+);
