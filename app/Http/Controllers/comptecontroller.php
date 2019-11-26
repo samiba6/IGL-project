@@ -22,13 +22,20 @@ class comptecontroller extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
+    public function create($id)
+    {   
         $student=Etudiante::find($id);
         $compte=new compte;
-        $compte->username=$student->s
-        $compte->password
-        $compte->typecompte
+        $compte->username=$student->nom.$student->prenom;
+        $compte->password=$student->nom.$student->LieuNaissance;
+        $compte->typecompte=3;
+        $compte->photoprofil=$student->PieceIdentite;
+        $compte->save();
+        $student->exist=true;
+        $student->Compte_idCompte=$compte->id;
+        $student->save();
+        return redirect()->back();
+
     }
 
     /**

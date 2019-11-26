@@ -87,12 +87,13 @@
             <th scope="col">lieu de naissace </th>
             <th scope="col">date de naissace </th>
             <th scope="col">numéro de telephone </th>
+            <th scope="col">Existance </th>
 
           </tr>
         </thead>
         <tbody>
           @foreach($students as $student) 
-                
+               
             
           <tr>
           <th scope="col">{{$student->nom}} </th>
@@ -101,7 +102,7 @@
             <th scope="col">{{$student-> LieuNaissance}}</th>
             <th scope="col">{{$student->datedenaissance}}</th>
             <th scope="col">{{$student->NumTelephone}}</th>
-            <th scope="col"> <a href="{{ route('Student.add',['id'=>$student->id])}}" class="btn btn-xs btn-success"> Ajouter ce etudiant </a>                                   </th>
+           @if($student->exist!=true)  <th scope="col"> <a href="{{ route('Student.add',['id'=>$student->id])}}" class="btn btn-xs btn-success"> Ajouter ce etudiant </a>  </th> @endif                               
           </tr>
           @endforeach
     

@@ -23,6 +23,7 @@ class CreateEtudiantesTable extends Migration
             $table->string('datedenaissance');
             $table->string('NumTelephone');
             $table->string('PieceIdentite');
+            $table->boolean('exist')->default(0);
             //////
             
             
