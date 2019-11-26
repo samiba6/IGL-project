@@ -101,6 +101,7 @@
             <th scope="col">{{$student-> LieuNaissance}}</th>
             <th scope="col">{{$student->datedenaissance}}</th>
             <th scope="col">{{$student->NumTelephone}}</th>
+            <th scope="col"> <a href="{{ route('Student.add',['id'=>$student->id])}}" class="btn btn-xs btn-success"> Ajouter ce etudiant </a>                                   </th>
           </tr>
           @endforeach
     

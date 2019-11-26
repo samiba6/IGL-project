@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Etudiante;
+use App\compte;
 class comptecontroller extends Controller
 {
     /**
@@ -23,7 +24,11 @@ class comptecontroller extends Controller
      */
     public function create()
     {
-        //
+        $student=Etudiante::find($id);
+        $compte=new compte;
+        $compte->username=$student->s
+        $compte->password
+        $compte->typecompte
     }
 
     /**

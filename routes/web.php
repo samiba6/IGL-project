@@ -28,3 +28,8 @@ Route::get('/student/list', [
     'uses'=>'Etudiantcontroller@index'
 ]
 );
+Route::get('/student/add/{id}',[
+    'uses'=>'comptecontroller@create',
+    'as'=>'Student.add'
+    
+    ]);
