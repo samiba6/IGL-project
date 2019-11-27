@@ -1,0 +1,196 @@
+
+  .switcherApp{
+    position: relative;
+    background: url("../images/pile-of-books.png");
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    color: black;
+  }
+
+  .AppAside {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    
+    
+  }
+
+  .Modifier{
+    width: 100%;
+    height: 100%;
+  }
+
+  .SignUpForm{
+    width: 600px;
+  }
+
+  .SignInForm{
+    width: 330px;
+  }
+
+  table{
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  
+  .AppForm {
+    position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    background-color: white ;
+    padding: 15px 40px;
+    overflow: auto;
+  }
+  
+  .PageSwitcher {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10%;
+  }
+  
+  .PageSwitcherItem {
+    background-color: white;
+    color: #9DA6B1;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-size: .9em;
+    border-color: #b7faff;
+    
+    outline: none;
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  .PageSwitcherItem--Active {
+    background-color: #b7faff;
+    color: black;
+  }
+  
+  .PageSwitcherItem:first-child {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+
+  .PageSwitcherItem:last-child {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+
+/***********************************************/
+/*c ete le nom de la classe SignUpForm*/
+.FormCenter {
+    margin-bottom: 100px;
+  }
+  
+  .FormTitle {
+    color: #707C8B;
+    font-weight: 300;
+    margin-bottom: 50px;
+  }
+  
+  .FormTitleLink {
+    color: #707C8B;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.7em;
+    margin: 0 10px;
+    padding-bottom: 5px;
+  }
+  
+  .FormTitleLink:first-child {
+    margin-left: 0;
+  }
+  
+  .FormTitleLink--Active {
+    color: black;
+    border-bottom: 1px solid #b7faff;
+  }
+  
+  
+  
+
+  .FormField {
+    margin-bottom: 40px;
+    padding: 0px 20px;
+  }
+  
+  
+  .FormFieldLabel {
+    
+    display: block;
+    text-transform: uppercase;
+    font-size: .9em;
+    color: black;
+  }
+
+  .FormFieldInput {
+    width: 250px;
+    background-color: transparent;
+    border: none;
+    color: black;
+    outline: none;
+    border-bottom: 1px solid #445366;
+    font-size: 1em;
+    font-weight: 300;
+    padding-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  .FormFieldInput::placeholder {
+    color: #616E7F;
+  }
+  
+  .FormFieldButton {
+    background-color: #b7faff;
+    color: black;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    padding: 15px 70px;
+    font-size: .8em;
+    font-weight: 500;
+    width: 200px;
+    margin-left: 50%  ;
+    transform: translateX(-50%);
+    cursor: pointer;
+  }
+  
+  .FormFieldLink {
+    color: #66707D;
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: 1.5px solid #225E62;
+    padding-bottom: 5px;
+    margin-left: 50%  ;
+    transform: translateX(-50%);
+  }
+  
+  .FormFieldCheckboxLabel {
+    color: #646F7D;
+    font-size: .9em;
+  }
+  
+  .FormFieldCheckbox {
+    position: relative;
+    top: 1.5px;
+  }
+  .FormFieldTermsLink {
+    color: black;
+    border-bottom: 1px solid #b7faff;
+    text-decoration: none;
+    display: inline-block;
+    padding-bottom: 2px;
+    margin-left: 5px;
+  }
+
+
+  
+  
+  
+  
