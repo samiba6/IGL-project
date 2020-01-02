@@ -14,3 +14,22 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/student/register', [
+    'uses'=>'Etudiantcontroller@create',
+    'as'=>'student.registre'
+]
+);
+Route::post('/student/store', [
+    'uses'=>'Etudiantcontroller@store',
+    'as'=>'student.store'
+]
+);
+Route::get('/student/list', [
+    'uses'=>'Etudiantcontroller@index'
+]
+);
+Route::get('/student/add/{id}',[
+    'uses'=>'comptecontroller@create',
+    'as'=>'Student.add'
+    
+    ]);
